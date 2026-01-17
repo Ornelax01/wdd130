@@ -47,5 +47,5 @@ main img {
     height: auto;
     border: #333;
     padding: 0;
-    box-shadow: rgb(0, 150, 0);
+    box-shadow: 5px 5px rgb(0, 150, 0);
 }
