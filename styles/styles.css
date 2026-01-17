@@ -26,3 +26,26 @@ footer {
     border-top: 1px solid #000;
     text-align: center;
 }
+
+nav {
+    padding: 0;
+    background-color: #333;
+}
+
+nav a {
+    display: block;
+    padding: 0;
+    color: #eee;
+}
+
+h1 {
+    color: #eee;
+}
+
+main img {
+    width: 200px;
+    height: auto;
+    border: #333;
+    padding: 0;
+    box-shadow: #000;
+}
