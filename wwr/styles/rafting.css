@@ -87,3 +87,7 @@ footer {
 footer p {
     color: var(--accent1-color);
 }
+
+header {
+    background-color: var(--accent2-color);
+}
