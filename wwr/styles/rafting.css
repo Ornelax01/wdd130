@@ -79,3 +79,11 @@ section {
     height: auto;
     margin-left: 16px;
 }
+
+footer {
+    background-color: var(--secondary-color);
+}
+
+footer p {
+    color: var(--accent2-color);
+}
