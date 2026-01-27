@@ -54,7 +54,6 @@ section {
     position: relative;
 }
 
-/* Hero title overlay */
 .hero h1 {
     position: absolute;
     top: 20px;
@@ -65,7 +64,6 @@ section {
     color: #fff;
 }
 
-/* Article overlay */
 .hero article {
     position: absolute;
     bottom: 20px;
@@ -75,7 +73,6 @@ section {
     padding: 16px;
 }
 
-/* Article image */
 .hero article img {
     float: right;
     width: 125px;
