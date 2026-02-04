@@ -18,7 +18,6 @@ body {
     color: var(--accent1-color);
 }
 
-header,
 main,
 footer {
     width: 840px;
@@ -92,9 +91,6 @@ footer p {
     color: var(--accent1-color);
 }
 
-header {
-    background-color: var(--accent2-color);
-}
 
 nav {
     display: flex;
@@ -113,14 +109,6 @@ nav a:hover {
     color: var(--primary-color);
     background-color: rgba(255, 255, 255, 0.4);
     border-radius: 4px;
-}
-
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    background-color: var(--accent2-color);
-    padding: 16px;
 }
 
 header img {
@@ -160,4 +148,12 @@ header img {
     margin-top: 8px;
     font-size: 0.9rem;
     color: var(--accent1-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    align-items: center;
+    background-color: var(--accent2-color);
+    padding: 16px;
 }
