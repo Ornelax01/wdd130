@@ -157,3 +157,64 @@ header {
     background-color: var(--accent2-color);
     padding: 16px;
 }
+
+.company-info iframe {
+    width: 100%;
+    max-width: 600px;
+    border: 0;
+}
+
+.employees {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.employees figure {
+    text-align: center;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-form button {
+    background-color: #004080;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #002f5f;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.employees h2 {
+    grid-column: 1 / -1;
+}
+
+.employees img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.employees figure {
+    margin: 0;
+}

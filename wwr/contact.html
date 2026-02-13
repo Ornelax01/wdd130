@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Contact White Water Rafting for reservations, general inquiries, or website suggestions. Find our address, phone number, email, and location map here.">
+    <meta name="author" content="Carlos Ornelas">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <title>Contact Us | White Water Rafting</title>
+</head>
+
+<body>
+    <header>
+        <img src="images/z-crossedoars.jpeg" alt="Logo for website">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Contact Us</h1>
+
+        <!-- Company Information -->
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 701 INTERNATIONAL ROAD, HIDALGO, TEXAS</p>
+            <p><strong>Phone:</strong> (956) 843-9457</p>
+            <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+
+            <iframe 
+                src="https://maps.app.goo.gl/w258FdhVRW1xvZKr9"
+                width="600"
+                height="450"
+                loading="lazy">
+            </iframe>
+        </section>
+
+        <!-- Employee Profiles -->
+        <section class="employees">
+            <h2>Meet Our Team</h2>
+
+            <figure>
+                <img src="images/employee1.jpg" alt="Sarah Jonson - River Guide">
+                <figcaption>Sarah Jonson - Senior River Guide</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee2.jpeg" alt="Maria Martinez - Reservation Manager">
+                <figcaption>Maria Martinez - Reservation Manager</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/employee3.avif" alt="Mike Johnson - Safety Instructor">
+                <figcaption>Mike Johnson - Safety Instructor</figcaption>
+            </figure>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+
+            <form action="#" method="post">
+                
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <fieldset>
+                    <legend>Purpose of Message</legend>
+
+                    <label>
+                        <input type="radio" name="purpose" value="general" required>
+                        General Inquiry
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="reservation">
+                        Reservation Question
+                    </label>
+
+                    <label>
+                        <input type="radio" name="purpose" value="suggestion">
+                        Website Suggestion
+                    </label>
+                </fieldset>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe">
+                    Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Send My Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - White Water Rafting - Carlos Ornelas</p>
+        <nav class="socialmedia">
+            <a href="https://facebook.com">
+                <img src="images/facebook.png" alt="Facebook icon">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram icon">
+            </a>
+            <a href="https://youtube.com">
+                <img src="images/youtube-square.svg" alt="YouTube icon">
+            </a>
+        </nav>
+    </footer>
+
+</body>
+</html>
