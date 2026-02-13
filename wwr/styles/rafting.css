@@ -164,16 +164,6 @@ header {
     border: 0;
 }
 
-.employees {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-}
-
-.employees figure {
-    text-align: center;
-}
-
 .contact-form form {
     display: flex;
     flex-direction: column;
