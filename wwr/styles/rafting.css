@@ -1,210 +1,329 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
-    --heading-font: "Times New Roman", Georgia, serif;
-    --body-font: Arial, Helvetica, sans-serif;
+  --primary-color: #055a05;
+  --secondary-color: #f4a261;
+  --accent1-color: #264653;
+  --accent2-color: #e9c46a;
+  --heading-font: "Times New Roman", Georgia, serif;
+  --body-font: Arial, Helvetica, sans-serif;
 }
 
+/* RESET */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
+  font-family: var(--body-font);
+  color: var(--accent1-color);
+  line-height: 1.6;
 }
 
-main,
-footer {
-    width: 840px;
-    margin: 0 auto;
-}
+/* =========================
+   HEADER
+========================= */
 
-h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-}
-
-nav,
-p,
-section {
-    margin: 16px;
-    padding: 8px;
-}
-
-.socialmedia {
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-}
-
-.socialmedia a {
-    text-decoration: none;
-}
-
-
-.socialmedia img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-}
-
-.hero {
-    position: relative;
-}
-
-.hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    background-color: rgba(38, 70, 83, 0.8);
-    color: #fff;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    width: 60%;
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 16px;
-}
-
-.hero article img {
-    float: right;
-    width: 125px;
-    height: auto;
-    margin-left: 16px;
-}
-
-footer {
-    background-color: var(--secondary-color);
-}
-
-footer p {
-    color: var(--accent1-color);
-}
-
-
-nav {
-    display: flex;
-    justify-content: flex-end;
-    gap: 24px;
-}
-
-nav a {
-    text-decoration: none;
-    font-weight: bold;
-    color: var(--accent1-color);
-    padding: 8px 12px;
-}
-
-nav a:hover {
-    color: var(--primary-color);
-    background-color: rgba(255, 255, 255, 0.4);
-    border-radius: 4px;
+header {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  align-items: center;
+  background-color: var(--accent2-color);
+  padding: 1rem 2rem;
 }
 
 header img {
-    width: 120px;
-    height: auto;
+  width: 120px;
 }
 
+.navigation {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+
+.navigation li {
+  list-style: none;
+}
+
+.navigation a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--accent1-color);
+}
+
+.navigation a:hover {
+  color: var(--primary-color);
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =========================
+   HERO SECTION (About Page)
+========================= */
+
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  background-color: rgba(38, 70, 83, 0.8);
+  color: white;
+  padding: 1rem;
+  font-family: var(--heading-font);
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 60%;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 1rem;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 1rem;
+}
+
+/* =========================
+   HISTORY SECTION
+========================= */
+
 .history {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 16px;
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding: 2rem;
+  align-items: center;
 }
 
 .history h2 {
-    grid-column: 1 / -1;
-    text-align: center;
+  grid-column: 1 / -1;
+  text-align: center;
+  font-family: var(--heading-font);
 }
+
+/* =========================
+   ADVENTURES SECTION
+========================= */
+
 .adventures {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 16px;
-    text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  text-align: center;
+  padding: 2rem;
 }
 
 .adventures h2 {
-    grid-column: 1 / -1;
-    margin-bottom: 8px;
+  grid-column: 1 / -1;
+  margin-bottom: 1rem;
+  font-family: var(--heading-font);
 }
 
 .adventures img {
-    width: 100%;
-    height: auto;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
 }
 
-.adventures figcaption {
-    margin-top: 8px;
-    font-size: 0.9rem;
-    color: var(--accent1-color);
+/* =========================
+   HOME PAGE FEATURES
+========================= */
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-header {
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    align-items: center;
-    background-color: var(--accent2-color);
-    padding: 16px;
+.card img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  border: 6px solid #d4b48c;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.company-info iframe {
-    width: 100%;
-    max-width: 600px;
-    border: 0;
+.card h3 {
+  margin-top: 1rem;
+  font-family: var(--heading-font);
 }
 
-.contact-form form {
-    display: flex;
-    flex-direction: column;
-    max-width: 500px;
+/* =========================
+   HIGHLIGHT SECTION (Home)
+========================= */
+
+.highlight {
+  background-color: #cdb693;
+  padding: 4rem 2rem;
 }
 
-.contact-form input,
-.contact-form textarea {
-    padding: 0.5rem;
-    margin-bottom: 1rem;
+.highlight-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
 }
 
-.contact-form button {
-    background-color: #004080;
-    color: white;
-    padding: 0.75rem;
-    border: none;
-    cursor: pointer;
+.highlight img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-.contact-form button:hover {
-    background-color: #002f5f;
+.highlight-text {
+  background-color: #6b705c;
+  color: white;
+  padding: 2rem;
 }
 
-.employees {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    text-align: center;
+.highlight-text h2 {
+  margin-bottom: 1rem;
 }
 
-.employees h2 {
-    grid-column: 1 / -1;
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  background-color: #6b705c;
+  color: white;
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  text-align: center;
 }
 
-.employees img {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
+.socialmedia {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
 
-.employees figure {
-    margin: 0;
+.socialmedia a {
+  text-decoration: none;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* =========================
+   TRIPS HERO SECTION
+========================= */
+
+.trips-hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.trips-hero h1 {
+  font-family: var(--heading-font);
+  margin-bottom: 1rem;
+}
+
+.trips-hero p {
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: var(--accent1-color);
+}
+
+/* =========================
+   TRIP GRID SECTION
+========================= */
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  padding: 3rem 2rem;
+}
+
+.trip-card {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.trip-card h2 {
+  font-family: var(--heading-font);
+  margin-bottom: 0.5rem;
+}
+
+/* =========================
+   TRIP TABLE SECTION
+========================= */
+
+.trip-table-section {
+  padding: 3rem 2rem;
+}
+
+.trip-table-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: var(--heading-font);
+}
+
+.trip-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: var(--accent1-color);
+  color: white;
 }
